@@ -1,25 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import './components/Message';
+import Message from './components/Message';
+import Greet from './components/Greet';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Message name="Sudhir Padhy 12212"/>
+      <Greet name="Hello X" hero="XY"> <p>"Hello Sudhir"</p> </Greet>
+      
     </div>
   );
 }
 
 export default App;
+
+
+// Props are immutable / their value can not be changed
